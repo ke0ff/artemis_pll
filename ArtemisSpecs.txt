@@ -5,7 +5,7 @@ Designed by: Joe Haas, KE0FF
 PLL: TI LMX2594HAT, 10 MHz - 15 GHz PLL, on-board lock LED indicator
 Buffer: PMA2-183LN+, 4-18 GHz, +14dBm IP1
 DC Power: +5Vdc, 400mA
-	NOTE: Board requires a heatshink/thermal pad
+	NOTE: Board requires a heatshink/thermal pad solution
 REF: Solder-selectable jumper/capacitor
 	EXT REF connection: SMA, 0.2 - 2.0 Vpp, 5 MHz (min) - 1400 MHz (max)
 	INT REF: 25MHz, EXC-TX053-S3-33-250-BN-TR
@@ -21,7 +21,7 @@ PLL programming allows for adjustment of the output level in 32 steps.
 The data above depicts the maximum setting for each frequency listed
 
 Physical:
-Board dimensions: 0.340" x 0.475" x 0.355" (excluding P2 connector)
+Board dimensions: 1.740" x 1.875" x 0.355" (excluding SMA & P2 connectors)
 MTG holes, #2 DIA, 4 places
 P2 pinout
  1: +12Vin (not used)
