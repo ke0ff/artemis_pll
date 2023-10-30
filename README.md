@@ -9,8 +9,10 @@ Note: While the TI LMX2594 covers 10MHz to 15 GHz, the choice of buffer amplifie
 Atemis3217.zip holds the initial software commit.
 Artemis Source holds in-process commits.
 
-To Build the SW project, first unzip "Artemis3217.zip".  Next, copy files (if any) from "Artemis Source" to their respective locations inside the Atmel project folder structure (this might require some trial and error to find where the files belong).
+Software for this project was developed with the AtmelStudio IDE.  Microchip has rebranded this as the MicrochipStudio For AVR devices.  Visit https://www.microchip.com/en-us/tools-resources/develop/microchip-studio to install the current version of this toolchain.  To Build the SW project, first unzip "Artemis3217.zip".  Next, copy files (if any) from "Artemis Source" to their respective locations inside the Atmel project folder structure (this might require some trial and error to find where the files belong).
 Lastly, build the project and program the target device.
+
+See my Programming Guide (https://ke0ff.github.io/Orion/silabspgm.pdf) for details on how to build a UPDI programmer using a CurosityNano-3217 development board.
 
 These supporting files are also included:</br>
 ArtemisHW.zip holds the CircuitStudio schematic and PCB files</br>
