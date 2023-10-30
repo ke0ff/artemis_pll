@@ -1,0 +1,45 @@
+Specifications for Artemis-I, 4 GHz - 15 GHz synthesizer
+Preliminary, 10/29/2023
+Designed by: Joe Haas, KE0FF
+
+PLL: TI LMX2594HAT, 10 MHz - 15 GHz PLL, on-board lock LED indicator
+Buffer: PMA2-183LN+, 4-18 GHz, +14dBm IP1
+DC Power: +5Vdc, 400mA
+	NOTE: Board requires a heatshink/thermal pad
+REF: Solder-selectable jumper/capacitor
+	EXT REF connection: SMA, 0.2 - 2.0 Vpp, 5 MHz (min) - 1400 MHz (max)
+	INT REF: 25MHz, EXC-TX053-S3-33-250-BN-TR
+TTL UART cmd I/O: 3.3V logic, 115200 baud, n81
+Control MCU: ATTINY-3217 (uses Atmel 1-wire UPDI programming connection)
+
+RF Out (preliminary), SMA:
+4GHz	+14dBm
+8GHz	+14dBm	phase noise = -80 dBm/Hz
+11GHz	+12dBm
+13GHz	+10dBm
+PLL programming allows for adjustment of the output level in 32 steps.
+The data above depicts the maximum setting for each frequency listed
+
+Physical:
+Board dimensions: 0.340" x 0.475" x 0.355" (excluding P2 connector)
+MTG holes, #2 DIA, 4 places
+P2 pinout
+ 1: +12Vin (not used)
+ 2: GND
+ 3: Debug RXD, 3.3V TTL serial, input to Artemis board
+ 4: +5V in
+ 5: Bebug TXD, 3.3V TTL serial, output from Artemis board
+ 6: GND
+ 7: /DISABLE (GND = disable output)
+ 8: FSEL0
+ 9: FSEL1
+10: FSEL2
+11: FSEL3
+12: FSEL4
+13: N/C
+14: UPDI programming connection for ATTINY MCU
+15: +3.3V output (10 mA, max)
+16: GND
+
+FSEL[4:0] form the channel selection vector allowing up to 32 different
+frequency selections from a single master PLL register suite.
