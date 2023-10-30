@@ -9,10 +9,10 @@ Note: While the TI LMX2594 covers 10MHz to 15 GHz, the choice of buffer amplifie
 Atemis3217.zip holds the initial software commit.
 Artemis Source holds in-process commits.
 
-To Build the project, first unzip "Artemis3217.zip".  Next, copy files (if any) from "Artemis Source" to their respective locations inside the Atmel project folder structure (this might require some trial and error to find where the files belong).
+To Build the SW project, first unzip "Artemis3217.zip".  Next, copy files (if any) from "Artemis Source" to their respective locations inside the Atmel project folder structure (this might require some trial and error to find where the files belong).
 Lastly, build the project and program the target device.
 
-These will be added soon:
-ArtemisHW.zip holds the CircuitStudio schematic and PCB files.
-Artemis_schem.pdf is the schematic in pdf format
-Artemis_BOM.xlsx is the Bill Of Materials
+These supporting files are also included:</br>
+ArtemisHW.zip holds the CircuitStudio schematic and PCB files</br>
+Artemis_schem.pdf is the schematic in pdf format</br>
+Artemis_BOM.xlsx is the Bill Of Materials</br>
