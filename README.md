@@ -14,6 +14,8 @@ Lastly, build the project and program the target device.
 
 See my Programming Guide (https://ke0ff.github.io/Orion/silabspgm.pdf) for details on how to build a UPDI programmer using a CurosityNano-3217 development board.
 
+TICSPro software (https://www.ti.com/tool/TICSPRO-SW) from TI is the best choice for configuring the PLL and capturing the resulting register settings (there are 112, 16b registers, 79 of which are required for basic Artemeis operation).
+
 These supporting files are also included:</br>
 ArtemisHW.zip holds the CircuitStudio schematic and PCB files</br>
 Artemis_schem.pdf is the schematic in pdf format</br>
