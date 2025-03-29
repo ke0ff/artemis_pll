@@ -20,3 +20,8 @@ These supporting files are also included:</br>
 ArtemisHW.zip holds the CircuitStudio schematic and PCB files</br>
 Artemis_schem.pdf is the schematic in pdf format</br>
 Artemis_BOM.xlsx is the Bill Of Materials</br>
+
+V0.3 SW is now in alpha-test:</br>
+Features 8 channels with download and FLASH programming capability to allow stand-alone channel maintenance.  Temporary download channel can be sent to PLL for test, or programmed to a FLASH channel.
+
+Temperature sensor calibration is now in User EEPROM allowing stand-alone calibraton that is not disturbed by programming operations.
